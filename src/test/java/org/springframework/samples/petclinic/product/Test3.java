@@ -74,7 +74,7 @@ public class Test3 {
         for(FeedingType v:feedingTypes) {
             if(v.getId()==1){
                 assertEquals(v.getName(),"High Protein Puppy Food","The name of the feeding type with id:1 should be 'High Protein Puppy Food'");
-                assertEquals(v.getDescription(),"Using a standard 8 oz/250 ml measuring cup which contains approximately 112 g of food: For a body weight of 3 - 12, feed with 1/2 to 2/3 cups until 3 months.","The description of the feeding type with id:1 is not correct");
+                assertEquals(v.getDescription(),"Using a standard 8 oz/250 ml measuring cup which contains apporximetly 112 g of food: For a body weight of 3-12, feed with 1/2 to 2/3 cups until 3 monthsUsing a standard 8 oz/250 ml measuring cup which contains approximately 112 g of food: For a body weight of 3 - 12, feed with 1/2 to 2/3 cups until 3 months.","The description of the feeding type with id:1 is not correct");
                 assertEquals(v.getPetType().getId(),2, "The pet type of the feeding type with id:1 is not correct");
             }else if(v.getId()==2){
                 assertEquals(v.getName(),"Adult Weight Management","The name of the feeding type with id:2 should be 'Adult Weight Management'");
